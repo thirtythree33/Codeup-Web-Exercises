@@ -1,0 +1,28 @@
+/*link but it's not underlined*/
+/*when you hover over it, it's underlined*/
+/*since this is one-page project you may use embedded css or a separate file*/
+/*don't forget to push*/
+header {font-style: bold;
+}
+
+header {
+    text-decoration: line-through;
+}     
+
+text-indent: 
+p.uppercase {
+    text-transform: uppercase;}
+
+p {
+    text-indent: 50px;
+}
+
+h1 {
+        font-weight: normal;
+    } 
+    .abstract {
+        transform: rotate(180deg);
+    }
+    #article-subhead {
+        background-color: salmon; 
+    }
