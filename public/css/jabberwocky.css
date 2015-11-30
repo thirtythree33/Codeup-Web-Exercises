@@ -1,28 +1,19 @@
-/*link but it's not underlined*/
-/*when you hover over it, it's underlined*/
-/*since this is one-page project you may use embedded css or a separate file*/
-/*don't forget to push*/
-header {font-style: bold;
-}
-
-header {
-    text-decoration: line-through;
+span {text-decoration: line-through;
+        background-color: red;
 }     
 
-text-indent: 
-p.uppercase {
-    text-transform: uppercase;}
-
-p {
-    text-indent: 50px;
+h3 {text-indent: 100px;
+}
+    
+div {text-align: right;
+}
+ 
+footer {font-family: fantasy;
 }
 
-h1 {
-        font-weight: normal;
-    } 
-    .abstract {
-        transform: rotate(180deg);
-    }
-    #article-subhead {
-        background-color: salmon; 
-    }
+a {text-decoration: none;
+    color: black;
+}
+
+a:hover {text-decoration: underline;
+}

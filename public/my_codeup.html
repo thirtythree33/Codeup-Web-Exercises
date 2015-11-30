@@ -1,0 +1,1621 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Front End Web Development</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/css/my_codeup.css">
+</head>
+
+<body>
+	<h1>Table of Contents</h1>
+
+<div id="toc" style="float:left; margin:0; width:100%">
+	<div id="contentBox" style="margin:0px auto; width:100%">
+	    <div id="column1" style="float:left; margin:0; width:25%;">
+		    <ul>
+		    	<li><a href="section0">Introduction</a></li>
+		    	<li><a href="section1">1. HTML</a></li>
+		    		<ul>
+						<li><a href="section1.1">1.1 Page Structure</a></li>
+						<li><a href="section1.2">1.2 Elements</a></li>
+						<li><a href="section1.3">1.3 Attributes</a></li>
+						<li><a href="section1.4">1.4 Forms</a></li>
+					</ul>
+				<li><a href="section2">2. Git</a></li>
+					<ul>
+						<li><a href="section2.1">2.1 Create Repository</a></li>
+						<li><a href="section2.2">2.2 Initialize Repository</a></li>
+						<li><a href="section2.3">2.3 Add Files</a></li>
+						<li><a href="section2.4">2.4 Committing</a></li>
+						<li><a href="section2.5">2.5 Pushing &amp; Pulling</a></li>
+						<li><a href="section2.6">2.6 Ignoring File</a></li>
+					</ul>
+				<li><a href="section3">3. CSS</a></li>
+					<ul>
+						<li><a href="section3.1">3.1 Basic Selectors</a></li>
+						<li><a href="section3.2">3.2 Properties</a></li>
+						<li><a href="section3.3">3.3 Box Model</a></li>
+						<li><a href="section3.4">3.4 Box Sizing</a></li>
+						<li><a href="section3.5">3.5 Positioning</a></li>
+						<li><a href="section3.6">3.6 CSS Resets</a></li>
+						<li><a href="section3.7">3.7 Style Organization</a></li>
+						<li><a href="section3.8">3.8 Layouts</a></li>
+						<li><a href="section3.9">3.9 Intro to Grids</a></li>
+						<li><a href="section3.10">3.10 Responsive Design</a></li>
+					</ul>
+	    		<li><a href="section5">4. JavaScript</a></li>
+	    			<ul>
+		    			<li><a href="section4.1">4.1 Primitive Types</a></li>
+		    			<li><a href="section4.2">4.2 JS with HTML</a></li>
+		    			<li><a href="section4.3">4.3 Statements</a></li>
+		    			<li><a href="section4.4">4.4 Functions</a></li>
+		    			<li><a href="section4.5">4.5 Arrays</a></li>
+		    			<li><a href="section4.6">4.6 Objects</a></li>
+		    			<li><a href="section4.7">4.7 Google Maps API</a></li>
+		    		</ul>
+		    	<li><a href="section6">5. jQuery</a></li>
+		    		<ul>
+		    			<li><a href="section5.1">5.1 Selectors</a></li>
+		    			<li><a href="section5.2">5.2 Events</a></li>
+		    			<li><a href="section5.3">5.3 Essential Methods</a></li>
+		    			<li><a href="section5.4">5.4 Build Calculator</a></li>
+		    			<li><a href="section5.5">5.5 Ajax Requests</a></li>
+		    			<li><a href="section5.6">5.6 Effects</a></li>
+		    		</ul>
+	    	</ul>
+	    </div>
+
+	    <div id="column2" style="float:left; margin:0;width:25%;">
+		    <ul>
+		    	<li><a href="section7">6. Frontend PHP</a></li>
+		    		<ul>
+		    			<li><a href="section6.1">6.1 Types &amp; Variables I</a></li>
+		    			<li><a href="section6.2">6.2 Types &amp; Variables II</a></li>
+		    			<li><a href="section6.3">6.3 Arrays</a></li>
+		    			<li><a href="section6.4">6.4 While</a></li>
+		    			<li><a href="section6.5">6.5 Foreach</a></li>
+		    			<li><a href="section6.6">6.6 Foreach with Keys</a></li>
+		    			<li><a href="section6.7">6.7 Functions</a></li>
+		    			<li><a href="section6.8">6.8 PHP &amp; HTML</a></li>
+		    			<li><a href="section6.9">6.9 Alternative Syntax</a></li>
+		    			<li><a href="section6.10">6.10 Include &amp; Require</a></li>
+		    		</ul>
+		    	<li><a href="section8">7. WordPress</a></li>
+		    		<ul>
+		    			<li><a href="section7.1">7.1 Install WordPress</a></li>
+		    			<li><a href="section7.2">7.2 WordPress Dashboard</a></li>
+		    			<li><a href="section7.3">7.3 Existing Themes</a></li>
+		    			<li><a href="section7.4">7.4 Creating Themes</a></li>
+		    		</ul>
+		    	<li><a href="section9">8. Angular</a></li>
+		    		<ul>
+		    			<li><a href="section8.1">8.1 Expressions &amp; Directives</a></li>
+		    			<li><a href="section8.2">8.2 Models</a></li>
+		    			<li><a href="section8.3">8.3 Controllers</a></li>
+		    			<li><a href="section8.4">8.4 Dependencies &amp; Services</a></li>
+		    		</ul>
+		    	<li><a href="section10">9. Appendix A: Code Standards</a></li>
+		    		<ul>
+		    			<li><a href="section9.1">1.1 Variabless Functionss &amp; Classes</a></li>
+		    			<li><a href="section9.2">9.2 Control Structures</a></li>
+		    			<li><a href="section9.3">9.3 Other Languages</a></li>
+		    		</ul>
+		    	<li><a href="section11">10. Appendix B: Post-Work</a></li>
+		    		<ul>
+		    			<li><a href="section10.1">10.1 Coding Challenges</a></li>
+		    			<li><a href="section10.2">10.2 Website Status Page</a></li>
+		    			<li><a href="section10.3">10.3 Memory Game</a></li>
+		    			<li><a href="section10.4">10.4 Incidents Map</a></li>
+		    			<li><a href="section10.5">10.5 Travel Distance Calculation</a></li>
+		    			<li><a href="section10.6">10.6 Sales Tax</a></li>
+		    			<li><a href="section10.7">10.7 Mars Rover</a></li>
+		    			<li><a href="section10.8">10.8 PDF Parser</a></li>
+		    			<li><a href="section10.9">10.9 Ajax Dashboard</a></li>
+		    			<li><a href="section10.10">10.10 Beef Up Your Blog</a></li>
+		    			<li><a href="section10.11">10.11 LaraBook</a></li>
+		    		</ul>
+		    </ul>    
+	    </div>
+	</div>
+</div>
+	<!-- <a href="section0">Introduction</a>
+	<a href="section1">1. HTML</a>
+		<a href="section1.1">1.1 Page Structure</a>
+		<a href="section1.2">1.2 Page Structure</a>
+		<a href="section1.3">1.3 Page Structure</a>
+		<a href="section1.4">1.4 Page Structure</a>
+	<a href="section2">2. Git</a>
+		<a href="section2.1">2.1 Page Structure</a>
+		<a href="section2.2">2.2 Page Structure</a>
+		<a href="section2.3">2.3 Page Structure</a>
+		<a href="section2.4">2.4 Page Structure</a>
+		<a href="section2.5">2.5 Page Structure</a>
+		<a href="section2.6">2.6 Page Structure</a>
+	<a href="section3">3. CSS</a>
+		<a href="section3.1">3.1 Page Structure</a>
+		<a href="section3.2">3.2 Page Structure</a>
+		<a href="section3.3">3.3 Page Structure</a>
+		<a href="section3.4">3.4 Page Structure</a>
+		<a href="section3.5">3.5 Page Structure</a>
+		<a href="section3.6">3.6 Page Structure</a>
+		<a href="section3.7">3.7 Page Structure</a>
+		<a href="section3.8">3.8 Page Structure</a>
+		<a href="section3.9">3.9 Page Structure</a>
+		<a href="section3.10">3.10 Page Structure</a>
+	<a href="section5">4. JavaScript</a>
+		<a href="section4.1">4.1 Page Structure</a>
+		<a href="section4.2">4.2 Page Structure</a>
+		<a href="section4.3">4.3 Page Structure</a>
+		<a href="section4.4">4.4 Page Structure</a>
+		<a href="section4.5">4.5 Page Structure</a>
+		<a href="section4.6">4.6 Page Structure</a>
+		<a href="section4.7">4.7 Page Structure</a>
+		<a href="section4.8">4.8 Page Structure</a>
+	<a href="section6">5. jQuery</a>
+		<a href="section5.1">5.1 Page Structure</a>
+		<a href="section5.2">5.2 Page Structure</a>
+		<a href="section5.3">5.3 Page Structure</a>
+		<a href="section5.4">5.4 Page Structure</a>
+		<a href="section5.5">5.5 Page Structure</a>
+		<a href="section5.6">5,6 Page Structure</a>
+		<a href="section5.7">5.7 Page Structure</a>
+		<a href="section5.8">5.8 Page Structure</a>
+	<a href="section7">6. Frontend PHP</a>
+		<a href="section6.1">6.1 Page Structure</a>
+		<a href="section6.2">6.2 Page Structure</a>
+		<a href="section6.3">6.3 Page Structure</a>
+		<a href="section6.4">6.4 Page Structure</a>
+		<a href="section6.5">6.5 Page Structure</a>
+		<a href="section6.6">6.6 Page Structure</a>
+		<a href="section6.7">6.7 Page Structure</a>
+		<a href="section6.8">6.8 Page Structure</a>
+		<a href="section6.9">6.9 Page Structure</a>
+		<a href="section6.10">6.10 Page Structure</a>
+	<a href="section8">7. WordPress</a>
+		<a href="section7.1">7.1 Page Structure</a>
+		<a href="section7.2">7.2 Page Structure</a>
+		<a href="section7.3">7.3 Page Structure</a>
+		<a href="section7.4">7.4 Page Structure</a>
+	<a href="section9">8. Angular</a>
+		<a href="section8.1">8.1 Page Structure</a>
+		<a href="section8.2">8.2 Page Structure</a>
+		<a href="section8.3">8.3 Page Structure</a>
+		<a href="section8.4">8.4 Page Structure</a>
+	<a href="section10">9. Appendix A: Code Standards</a>
+		<a href="section9.1">1.1 Page Structure</a>
+		<a href="section9.2">9.2 Page Structure</a>
+		<a href="section9.3">9.3 Page Structure</a>
+	<a href="section10">10. Appendix B: Postwork</a>
+		<a href="section10.1">10.1 Page Structure</a>
+		<a href="section10.2">10.2 Page Structure</a>
+		<a href="section10.3">10.3 Page Structure</a>
+		<a href="section10.4">10.4 Page Structure</a>
+		<a href="section10.5">10.5 Page Structure</a>
+		<a href="section10.6">10.6 Page Structure</a>
+		<a href="section10.7">10.7 Page Structure</a>
+		<a href="section10.8">10.8 Page Structure</a>
+		<a href="section10.9">10.9 Page Structure</a>
+		<a href="section10.10">10.10 Page Structure</a>
+		<a href="section10.11">10.12 Page Structure</a> -->
+
+<!--end of Table of Contents-->		
+
+
+
+	<h1 id="section0">Introduction</h1>
+		<p>
+			<h3>The Codeup Night Bootcamp is a 4 month, in-person evenings-only program that turns non-techies into entry level front end web developers using a unique, instructor-led approach.</h3>
+
+			<h3>During this course, we will learn about the languages and technologies that are essential to front end web development.</h3>
+		</p>
+
+	<h1 id="section1">HTML</h1>
+		<p>
+			<h3>HTML stands for HyperText Markup Language, and it is the language of the web. When you view a page on the web, your web browser processes the HTML, along with styling information, into the page you see on your screen. Even if the website was written using PHP or Ruby, the final result that your browser sees is just HTML.</h3>
+
+			<h3>HyperText is described as text that is displayed on an electronic device that can be linked to other text which is accessible to the user. Whenever you click on a link on a web page, you are taking advantage of HyperText linking.</h3>
+
+			<h3>A Markup Language is defined annotations that gets added to text that describes the text further. For example, if you were writing an essay, you would have headings, paragraphs, and embedded images. HTML has all the same things, and there is a defined format in which to represent the different parts of a document.</h3>
+
+			<h3>In this course, we will be using HTML5, the fifth revision of the HTML standard.</h3>
+		</p>
+
+		<h1 id="section1.1">1.1 Page Structure</h1>
+			<p>
+				<h3>HTML Document Structure</h3>
+
+				<h3>In the last lesson, we learned about HTML elements and attributes. In this lesson, we will learn about how some of the primary HTML elements are used to create an HTML document.</h3>
+
+				<h3>Doctype Declaration</h3>
+
+				<h3>The first line of an HTML document is the doctype declaration. Since there are different versions of the HTML standard, this line is needed to help the browser identify the data that will follow.</h3>
+
+				<h3>For HTML5, the doctype declaration looks like this:</h3>
+
+				<h3>In an element-based markup language, the root element is the first element on the page. It is also the element that contains all other elements. For HTML, the root element is html.</h3>
+
+				<h3>So far, this is what we have:</h3>
+
+				<h3>Head and Body</h3>
+
+				<h3>Within the root element, <html>, of an html document, you will find a <head> element, and a <body> element. The <head> element is used to tell the web browser information about the web page. The <body> element is used to define the content that the web browser will display to a user.</h3>
+
+				<h3>Now, we have a document that looks like this:</h3>
+
+				<h3>Page Title</h3>
+
+				<h3>As you know, web pages have titles. You have seen these in the title bar of your web browser, or in the name of bookmarks you make. There is an element, (code), that gets added to the HTML document's (head) that provides the title to the web browser. An HTML document with a title looks like this:</h3>
+
+				<h3>In the example above, the page title is My First Web Page.</h3>
+
+				<h3>Metadata</h3>
+
+				<h3>Metadata, or extended information, can be provided via the <meta> element within the document's <head>. A few examples of things specified via metadata are:</h3>
+
+				<h3>search keywords</h3>
+
+				<h3>page description</h3>
+		
+				<h3>page author</h3>
+
+				<h3>page character set</h3>
+
+				<h3>In the example above, we specified a element defining the character set for the web page. Notice that there is no close tag for meta because it is a void element.</h3>
+
+				<h3>Styles and Scripts</h3>
+
+				<h3>Later on, we will learn about adding styles and scripts to our HTML pages. There are special elements that get added to the document to describe such data, but we aren't quite ready for them.</h3>
+
+				<h3>Comments</h3>
+
+				<h3>Comments in HTML pages look different from what you see in PHP or other programming languages. HTML comments will not be rendered by the web browser, but are viewable in the source of the web page. An HTML comment looks like this:</h3>
+
+				<h3>Semantic Markup</h3>
+
+				<h3>As we get further into HTML and begin learning about some of the available elements, you may notice that the same visual result can be achieved using different combinations of markup and styles. It should be noted that the HTML element that best describes the data that it contains is the appropriate one for the job.</h3>
+
+				<h3>Keep in mind that there are other consumers of web pages besides web browsers. For example, there are screen readers, for the visually impaired, that actually read the contents of the page to a user. If you do not use the appropriate elements to hold your data, the screen reader will not provide a good user experience.</h3>
+
+				<h3>Exercises</h3>
+
+				<h3>Hello World in HTML.</h3>
+
+				<h3>Please perform the following steps to create your own Hello World web page.</h3>
+
+				<h3>Within the ~/vagrant-lamp/sites/codeup.dev/public/ folder on your Mac, create a file named hello_world.html.</h3>
+
+				<h3>By hand (please do not copy and paste unless all this has been a review for you!), type out a complete HTML document using the example shown in the metadata section above.</h3>
+
+				<h3>Change the page title to something creative.</h3>
+
+				<h3>Replace the comment in the body of the HTML document with text that says Hello from Codeup!.</h3>
+
+				<h3>View the result in your web browser by browsing to: http://codeup.dev/hello_world.html</h3>	
+			</p>
+
+		<h1 id="section1.2">1.2 Elements</h1>
+			<p>
+				<h3>Headings</h3>
+
+					<h3>To define in a main heading in an HTML document, you can use an h1 tag. In fact, the text "Headings", just above this paragraph, is defined using an h1 tag.</h3>
+
+					<h3>Since documents can contain different level headings, HTML provides several different heading levels. The levels, start at 1 as in h1 and go all the way down to 6 as in h6.</h3>
+
+					<h3>Here is what a full heading level 1 element would look like in your HTML document:</h3>
+
+					<h3>h1Heading Goes Hereh1</h3>
+
+					<h3>Here are some examples of what the different heading levels look like.</h3>
+
+					<h3>I am an h1</h3>
+
+					<h3>I am an h2</h3>
+
+					<h3>I am an h3</h3>
+
+					<h3>I am an h4</h3>
+
+					<h3>I am an h5</h3>
+
+					<h3>I am an h6</h3>
+
+					<h3>You have certainly seen headings used all over the web. Now it is time to begin using them in your own pages.</h3>
+
+					<h3>Exercises</h3>
+
+					<h3>For this lesson, you will be modifying the hello_world.html file that you created earlier. Please perform the following steps:</h3>
+
+					<h3>Open the hello_world.html file in your favorite editor.</h3>
+
+					<h3>Experiment with the different heading levels by enclosing your "hello world" message inside heading tags. Notice that even without any styles in the page, the browser provides default styles for the heading elements.</h3>
+
+					<h3>View the result in your web browser by browsing to: http://codeup.dev/hello_world.html</h3>
+
+					<h3>When you are done experimenting with the heading levels, change the page so that you have your "hello world" message inside h1 tags.</h3>
+
+
+
+
+
+
+				<h3>Paragraphs</h3>
+
+					<h3>Paragraphs and More</h3>
+
+					<h3>In this lesson, we will continue by discussing several common HTML elements.</h3>
+
+					<h3>Paragraphs p</h3>
+
+					<h3>To define a paragraph in HTML, you use the paragraph element, p as follows:</h3>
+
+					<h3>pThe text inside the tags will be interpreted as a paragraph./p</h3>
+
+					<h3>pThis is another paragraph. The web browser will put some space between paragraphs, just like you would in a typewritten essay./p</h3>
+					
+					<h3>The tags and the text do not have to be on the same line.</h3>
+
+					<h3>Line Breaks br</h3>
+
+					<h3>To define a line break in HTML, you use the line break element, br as follows:</h3>
+
+					<h3>pGimme a break,brgimme a break,brbreak me off a piece... well, you know the rest./p</h3>
+		
+					<h3>The text above would appear as follows:</h3>
+
+					<h3>Gimme a break,</h3>
+
+					<h3>gimme a break,</h3>
+
+					<h3>break me of a piece... well, you know the rest.</h3>
+
+					<h3>The line break element is a void element (doesn't have any content). You shouldn't use two line breaks in a row. Instead, just create a new paragraph. Line breaks also shouldn't be used for spacing visual elements on a page. Remember, HTML elements are used to describe data, not presentation.</h3>
+
+					<h3>Emphasis em</h3>
+
+					<h3>Giving emphasis to a word or phrase in HTML can be accomplished with the emphasis element, em, as follows:</h3>
+
+<!--this is where pasted block of code will go-->
+
+					<h3>That would look something like this:</h3>
+
+					<h3>HTML is seriously awesome!</h3>
+
+					<h3>As you can see, the browser's default style for the em element is italics. However, this can easily be changed, as we will learn later. The important thing to notice it that the emphasis tag is defining that something should be emphasized, not how it should be emphasized.</h3>
+
+					<h3>Strong Emphasis strong</h3>
+
+					<h3>Making a word or phrase stand out in HTML can be accomplished with the strong element, <strong>, as follows:</h3>
+
+					<h3>pWhat I am about to tell you is strongreally important/strong!/p</h3>
+	
+					<h3>That would look something like this:</h3>
+
+					<h3>What I am about to tell you is really important!</h3>
+
+					<h3>As you can see, the browser's default style for the <strong> element is bold. Once again, this can easily be changed, as we will learn later when we get to CSS and styling.</h3>
+
+					<h3>Block Quote blockquote</h3>
+
+					<h3>If you'd like to make a quote in HTML, you can accomplish that with the block quote element, <blockquote>, as follows:</h3>
+
+					<h3>>blockquoteMy favorite quote would go here./blockquote</h3>
+
+					<h3>By default, most browsers will simply indent block quoted text. With a little styling though, block quotes may look like this:</h3>
+
+					<h3>My favorite quote would go here.</h3>
+
+					<h3>Block Elements vs Inline Elements</h3>
+
+					<h3>You may have noticed that some of the element examples above were nested within other elements. For example, the emphasis example was embedded in a paragraph element. Deciding what and how to nest elements should be determined based on whether the element is a block or inline element.</h3>
+
+					<h3>Block Elements</h3>
+
+					<h3>Block elements naturally take up the full width of the page. Elements placed after them will appear below them. Of the elements you have learned so far, the following are block: headings and paragraphs. Block elements can contain other block elements or inline elements.</h3>
+
+					<h3>Inline Elements</h3>
+
+					<h3>Inline elements are part of the flow of text in the page. Of the elements you have learned so far, the following are inline: emphasis and strong. Inline elements can be contained within block elements, but not the other way around. For example:</h3>
+
+					<h3>Do this:</h3>
+
+<!--this is where pasted block of code will go-->
+
+					<h3>Do not do this:</h3>
+
+<!--this is where pasted block of code will go-->
+					
+					<h3>Exercises</h3>
+
+					<h3>For this lesson, you will continue modifying the hello_world.html file that you created earlier. Please perform the following steps:</h3>
+
+					<h3>Open the hello_world.html file in your favorite editor.</h3>
+	
+					<h3>Below the "hello world" heading, create a paragraph introducing yourself and telling some fun facts about yourself. Use emphasis, strong emphasis, and line break elements within the paragraph.</h3>
+
+					<h3>Below the paragraph, create a level 2 heading that says: "My Favorite Quote". Below that heading, use the block quote element and paste in your favorite quote.</h3>
+
+					<h3>View the result in your web browser by browsing to: http://codeup.dev/hello_world.html</h3>
+
+
+
+
+
+
+
+				<h3>Lists</h3>
+					<h3>Lists</h3>
+
+					<h3>HTML provides a variety of elements for defining lists.</h3>
+
+					<h3>Unordered Lists</h3>
+
+					<h3>One of the simplest forms of a list is an unordered list. Whenever you see a list with bullet points, you are likely viewing the browser's presentation of an unordered list.</h3>
+
+					<h3>Unordered lists are defined using the <ul> element. An unordered list should contain list items. List items are represented using the <li> element. Here is an example:</h3>
+
+
+<!--this is where pasted block of code will go-->
+
+					<h3>The above example would look something like this:</h3>
+
+					<h3>The first list item.</h3>
+					
+					<h3>The second list item.</h3>
+					
+					<h3>The third list item.</h3>
+
+					<h3>It should again be noted that the styling of lists, like other elements, can be changed, and anything that represents a non-numbered list of items could accurately be describe using an unordered list. In fact, many web page navigation bars are defined using unordered lists.</h3>
+
+					<h3>Ordered Lists</h3>
+
+					<h3>Ordered lists are not just bulleted, but instead have some type of identifier that specifies the order. Ordered lists can be defined using the ol element as follows:</h3>
+
+
+<!--this is where pasted block of code will go-->
+
+					<h3>The above example would look something like this:</h3>
+
+					<h3>The first list item.</h3>
+	
+					<h3>The second list item.</h3>
+
+					<h3>The third list item.</h3>
+
+					<h3>Definition Lists</h3>
+
+					<h3>HTML provides specific elements for defining a definition list. First of all, a definition list is defined using the dl element. A definition list contains definition terms and definition descriptions, defined using the dt and dd elements, respectively. Let's look at an example:</h3>
+
+<!--this is where pasted block of code will go-->
+
+					<h3>The above example would look something like this:</h3>
+
+<!--this is where pasted block of code will go-->
+				
+					<h3>Exercises</h3>
+
+					<h3>For this lesson, you will continue modifying the hello_world.html file that you created earlier. Please perform the following steps:</h3>
+
+					<h3>Open the hello_world.html file in your favorite editor.</h3>
+		
+					<h3>Below your favorite quote, add a level 2 heading that says: "I'm Learning the LAMP Stack".</h3>
+	
+					<h3>Below the heading, create an unordered list that names each item in the LAMP stack.</h3>
+
+					<h3>Below the unordered list, create another level 2 heading that says: "My Top 5 Favorite Foods".</h3>
+
+					<h3>Below the heading, create an ordered list containing your top 5 favorite foods in order.</h3>
+
+					<h3>Below the ordered list, create another level 2 heading that says: "Questions I'm Often Asked".</h3>
+
+					<h3>Below the heading, create a definition list containing at least 2 questions you are often asked, along with the answers you generally give. Be creative.</h3>
+
+					<h3>View the result in your web browser by browsing to: http://codeup.dev/hello_world.html</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+				<h3>Anchors</h3>
+
+					<h3>Anchors</h3>
+
+					<h3>Hyperlinks to other pages, or to locations within the current page, are accomplished using the HTML anchor, <a>, element.</h3>
+
+					<h3>External Links</h3>
+
+					<h3>From your experience on the web, you are probably quite familiar with external links. Any link that you click on that takes you to a new page, even within the same website, is an external link. You can build an external link using the HTML anchor element as follows:</h3>
+
+<!--this is where pasted block of code will go-->
+
+					<h3>This would appear as: Go to Google</h3>
+
+					<h3>As you can see, the anchor element in the above example contains an attribute named href. The href attribute is used to specify the web address the web browser should go to when the anchor is clicked. Also, notice that the content of the anchor element is the text that the browser displays for the link.</h3>
+
+					<h3>By default, an anchor tag will open the link destination in the same browser window the user is currently using. However, you can tell the browser that a link should be opened in a new window by using the target attribute. To open a link in a new window, do the following:</h3>
+
+<!--this is where pasted block of code will go-->
+
+					<h3>Instead of opening Google in the current browser window, this will open Google in a new window. There are other possible values for the target attribute, but we will not be using them in our lessons.</h3>
+
+					<h3>Internal Links</h3>
+
+					<h3>Besides transitioning between pages, anchor tags can also be used to take a user somewhere else within the existing document. This can be useful in a table of contents, allowing a user to click an item to jump to a particular section of the document. It is also used for things like allowing a user to jump back to the top of a page.</h3>
+
+					<h3>To create a anchored location within an HTML document, use an anchor with no content and an id attribute as follows:</h3>
+
+<!--this is where pasted block of code will go-->
+
+					<h3>In the above example, you can see that an anchor tag, without an href attribute, can be used to create an anchored location within a page. An id attribute with a unique value must be specified as part of the internal anchor.</h3>
+
+					<h3>Next, you probably want to link to the anchored location from other areas of your HTML document. To link back to the anchored location, create another anchor with an href that points to the id of the anchored location as follows:</h3>
+
+<!--this is where pasted block of code will go-->
+
+					<h3>Notice that the value of the href attribute of the above anchor element starts with #. This tells the web browser that we want to link to an internal id. Later on, you will see this used again when we get into CSS selectors.</h3>
+
+					<h3>Exercises</h3>
+
+					<h3>For this lesson, you will continue modifying the hello_world.html file that you created earlier. Please perform the following steps:</h3>
+
+					<h3>Open the hello_world.html file in your favorite editor.</h3>
+
+					<h3>Within the body tags of the document, below everything else you have added, create a new level 2 heading that says: "My Favorite Websites".</h3>
+
+					<h3>Below the heading, use either an ordered or unordered list to list your top 5 favorite websites. Make the names of the sites link to the sites by opening them in a new window.</h3>
+
+					<h3>Use what you learned in this lesson to create a "go to top of page" feature within your HTML document.</h3>
+
+					<h3>View the result in your web browser by browsing to: http://codeup.dev/hello_world.html</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+				<h3>Images</h3>
+					<h3>Images</h3>
+
+					<h3>Images can be used in web pages by using the image, <img>, element as follows:</h3>
+
+<!--this is where pasted block of code will go-->
+
+					<h3>The above example with look something like this:</h3>
+
+<!--this is where pasted block of code will go-->
+
+					<h3>As you can see, the img element is a void element, because it has not contents. You can also see that a couple of attributes have been specified as part of the img element.</h3>
+
+					<h3>src - Source of the image, specified as an absolute or relative url.</h3>
+
+					<h3>alt - Alternative text for non-visual or text based browsers.</h3>
+
+					<h3>In order to properly display an image, a valid src must be specified. The alt attribute is optional, but really should be included in all <img> elements.</h3>
+
+					<h3>Hotlinking</h3>
+
+					<h3>Using an image by linking to the file on another website, as we did with the Google logo in the example above, is known as hotlinking. Hotlinking is a discouraged practice because it uses someone else's web bandwidth, and web bandwidth costs money.</h3>
+
+					<h3>Instead of hotlinking, you should host your images on your own web site so that you can link to them locally. In order to do that, a new directory should be created in your public web directory specifically to hold the images for your site. Most often, the name of that directory is img.</h3>
+
+					<h3>Here is an example of using a relative url to link to a local image:</h3>
+
+<!--this is where pasted block of code will go-->
+
+					<h3>In the example above, the src attribute of the <img> element is set to /img/codeup.png. When we learned about traversing the file system in the terminal, we learned that when you precede a path with a backslash (/), you are starting at the root. Similarly, when you do this within web urls, you are referring to the web root. This means that the <img> element in the example above will look for a directory name img in the web root containing a file named codeup.png. The rest of the url (the domain name part) will automatically get filled in by the web browser.</h3>
+
+					<h3>Exercises</h3>
+
+					<h3>For this lesson, you will continue modifying the hello_world.html file that you created earlier. Please perform the following steps:</h3>
+
+					<h3>Open the hello_world.html file in your favorite editor.</h3>
+
+					<h3>Within the body tags of the document, below everything else you have added, create a new level 2 heading that says: "My Vehicle".</h3>
+
+					<h3>Below the heading, create a new paragraph describing the vehicle you own, or the one you dream about.</h3>
+
+					<h3>Browse the web and find an image of the vehicle you described and download the image.</h3>
+
+					<h3>Create a new directory, named img, in the following location: ~/vagrant-lamp/sites/codeup.dev/public</h3>
+
+					<h3>Move the image you downloaded to the directory you just created.</h3>
+
+					<h3>Use what you learned in this lesson to display the image in your web page right below the paragraph describing the vehicle.</h3>
+
+					<h3>View the result in your web browser by browsing to: http://codeup.dev/hello_world.html</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<h3>Tables</h3>
+					<h3>Basic Tables</h3>
+
+					<h3>To display tabular data in an HTML document, you can use the table element. Note that the table element should not be used to create web layouts, just to display tabular data.</h3>
+
+					<h3>HTML tables contain rows, and rows contain columns. Table rows are defined using the tr element, and column data is defined using the td element. Within the first row tr of a table, you can place the heading column element, th, instead of td to designate the contents as a heading.</h3>
+
+					<h3>A simple HTML table element looks like this:</h3>
+
+						<table>
+						    <tr>
+						        <th>Heading 1</th>
+						        <th>Heading 2</th>
+						        <th>Heading 3</th>
+						        <th>Heading 4</th>
+						    </tr>
+						    <tr>
+						        <td>Row 1, Column 1</td>
+						        <td>Row 1, Column 2</td>
+						        <td>Row 1, Column 3</td>
+						        <td>Row 1, Column 4</td>
+						    </tr>
+						    <tr>
+						        <td>Row 2, Column 1</td>
+						        <td>Row 2, Column 2</td>
+						        <td>Row 2, Column 3</td>
+						        <td>Row 2, Column 4</td>
+						    </tr>
+						</table>
+
+					<h3>This would look something like this:</h3>
+
+					<h3>Heading 1	Heading 2	Heading 3	Heading 4</h3>
+					<h3>Row 1, Column 1	Row 1, Column 2	Row 1, Column 3	Row 1, Column 4</h3>
+					<h3>Row 2, Column 1	Row 2, Column 2	Row 2, Column 3	Row 2, Column 4</h3>
+
+					<h3>There are many other customization options available with HTML tables, but you will only need to know the basics covered here for this course.</h3>
+
+					<h3>Exercises</h3>
+
+					<h3>For this lesson, you will continue modifying the hello_world.html file that you created earlier. Please perform the following steps:</h3>
+
+					<h3>Open the hello_world.html file in your favorite editor.</h3>
+
+					<h3>Within the body tags of the document, below everything else you have added, create a new level 2 heading that says: "Decimal to Hexadecimal Conversion Chart".</h3>
+
+					<h3>Below the heading, create a table with a heading row with 2 columns: "Decimal" and "Hexadecimal". Next, create additional rows to show the conversion of the decimal numbers 0 through 15 to hexadecimal.</h3>
+
+					<h3>View the result in your web browser by browsing to: http://codeup.dev/hello_world.html</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<h3>Semantic Containers</h3>
+					<h3>Semantic Usage of Elements</h3>
+
+					<h3>Semantics are the implied meaning of a subject, like a word or sentence. It aids how humans (and these days, machines) interpret subject matter. On the web, HTML serves both humans and machines, suggesting the purpose of the content enclosed within an HTML tag.</h3>
+
+					<h3>HTML5 Doctor</h3>
+
+					<h3>Throughout the history of the web, we have strived to give better meaning to HTML. Machines do not care what the information is, they just need to know what to do with it. As technology improves, browsers and devices will better understand what to do with the information presented to humans, resulting in a better experience for all users.</h3>
+
+					<h3>As you develop more and more websites or applications, you will find yourself questioning which elements to use at any given time. Think about the intended purpose of the information you are wrapping code around. Is it meant to be a blog article? Or possibly navigation? It is up to you to determine the true intent of the content.</h3>
+
+					<h3>If you are coding a site given to you by another designer, speak with that designer about it if you are unsure. If it is your own design, ask yourself the purpose. Do not forget you always have Google if you need to do some research on semantics and the web. Do not beat yourself up about, but do your work with purpose.</h3>
+
+					<h3>Its ok to use div or span if you cannot find a valid enough reason to use a section or li.</h3>
+
+					<h3>Let's review some common elements and their usage to give you an example:</h3>
+
+					<h3>Header</h3>
+
+					<h3>The header element represents a group of introductory or navigational aids. A header element is intended to usually contain the section’s heading (an h1–h6 element), but this is not required. The header element can also be used to wrap a section’s table of contents, a search form, or any relevant logos.</h3>
+
+<!--this is where pasted block of code will go-->
+
+					<h3>Nav</h3>
+
+					<h3>The nav element represents a section of a page that links to other pages or to parts within the page: a section with navigation links. Not all groups of links on a page need to be in a nav element — only sections that consist of major navigation blocks are appropriate for the nav element.</h3>
+
+<!--this is where pasted block of code will go-->
+
+					<h3>Main</h3>
+
+					<h3>The HTML main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to, or expands upon the central topic of a document or the central functionality of an application.</h3>
+
+<!--this is where pasted block of code will go-->
+
+					<h3>Section</h3>
+
+					<h3>The section element represents a generic document or application section. A section, in this context, is a thematic grouping of content, typically with a heading. Examples of sections would be chapters, the tabbed pages in a tabbed dialog box, or the numbered sections of a thesis. A Web site's home page could be split into sections for an introduction, news items, contact information.</h3>
+
+<!--this is where pasted block of code will go-->
+
+					<h3>Article</h3>
+
+					<h3>The article element represents a component of a page that consists of a self-contained composition in a document, page, application, or site. This could be a forum post, a magazine or newspaper article, a web log entry, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.</h3>
+
+<!--this is where pasted block of code will go-->
+
+					<h3>Aside</h3>
+
+					<h3>The aside element represents a section of a page that consists of content that is tangentially related to the content around the aside element, and which could be considered separate from that content. Used for quotes or sidebars, for advertising, for groups of nav elements, and for other content that is considered separate from the main content of the page.</h3>
+
+
+<!--this is where pasted block of code will go-->
+
+					<h3>Footer</h3>
+
+					<h3>Footer tag is used at the bottom of your page and can hold copyright information, privacy policies, site name, secondary navigation, etc. It is generally information and links a user might need, or that is necessary for legal or ethical reasons, but is of much lower priority than the rest of your navigation and content.</h3>
+
+<!--this is where pasted block of code will go-->
+
+					<h3>UL</h3>
+
+					<h3>The unordered list element represents an unordered list of items, namely a collection of items that do not have a numerical ordering, and their order in the list is meaningless.</h3>
+
+
+<!--this is where pasted block of code will go-->
+
+					<h3>Div</h3>
+
+					<h3>Div element (division element) is a generic tag that does not represent anything. Divs are your container of last resort, if none of the semantic container tags makes sense you can wrap your content in <div> tags. However, you should use this sparingly!</h3>
+
+<!--this is where pasted block of code will go-->
+
+					<h3>Exercise</h3>
+
+					<h3>Download the file semantic_exercise.html to the folder ~/vagrant-lamp/sites/codeup.dev/public.</h3>
+
+					<h3>View the original file in your browser at http://codeup.dev/semantic_exercise.html.</h3>
+
+					<h3>Open the file with Sublime.</h3>
+
+					<h3>Replace all of the div tags with correct semantic tags. Every single div can be replaced with a more appropriate semantic tag. Do not forget to replace both the opening and closing tags.</h3>
+
+					<h3>Refresh the view in your browser. Did your layout change? Why or why not do you think?</h3>
+
+					<h3>Throughout the rest of this course, be on the look out for div tags that can be replaced with semantic containers.</h3>
+			</p>
+
+		<h1 id="section1.3">1.3 Attributes</h1>
+			<p>
+				<h3>Naming Conventions</h3>
+
+				<h3>Deciding what class and ID names can sometimes become overwhelming depending upon the type of website or application for which you are coding. It is always good to establish a naming convention before you begin coding.</h3>
+
+				<h3>A Brief Thought About IDs</h3>
+
+				<h3>Since IDs are unique, meaning only one ID per page, generally it is best to save IDs for use with Javascript or identifying major view differences. For example:</h3>
+
+<!--this is where pasted block of code will go-->
+
+				<h3>Neither of these are really necessary from a CSS point of view. With CSS, which we will cover later, IDs have a higher priority over classes when it comes to styling and can overwrite a previously written style if you are not careful.</h3>
+
+				<h3>Class Naming Conventions</h3>
+
+				<h3>There are generally three methods for determining a class naming structure:</h3>
+
+				<h3>Content Based Naming</h3>
+
+				<h3>Presentation Based Naming</h3>
+				
+				<h3>Functional Naming</h3>
+
+				<h3>Content Based Naming</h3>
+
+				<h3>Content-based class names are class names that describe the content they contain. If you have ever seen a class name like submit-button, intro-text, or profile-photo, you were looking at a content-based class name. An example might look like:</h3>
+
+<!--this is where pasted block of code will go-->
+
+				<h3>These class names feel clean. They help keep a clear separation between your content (HTML) and styling (CSS). In theory, this enables you to completely redesign the look and feel of your website without touching your HTML.</h3>
+
+				<h3>Content-based class names work fine if you are working on small websites. As your site grows though, they become less and less appropriate. They are not good for style reuse. What if your login-button and your submit-button look the same? You do not want to repeat yourself and will have to use a comma separator. Unfortunately they may change style in the future, which will cost you in development time.</h3>
+
+				<h3>Presentational Based Naming</h3>
+
+				<h3>Presentational class names describe the way an element looks–like green-button or big-text or squiggle-border. The name itself is describing the styles that are being applied, like the following:</h3>
+
+<!--this is where pasted block of code will go-->
+
+				<h3>These classes are conducive to code reuse. They do not care if they are being used to style a product title, a username, or a page heading. They just know they are gonna make text big and bold. This also comes with the benefit of scaling gracefully. As you are developing new components, you are able to grab already-existing styles and slap them onto your new markup. You do not need to worry about where to fit your new styles into a pre-existing architecture since you are not writing any new styles.</h3>
+
+				<h3>Presentational classes are also very self-describing. A developer inspecting code can infer more about how an element will look if it has the class name round-image rather than profile-photo.</h3>
+
+				<h3>Functional Naming</h3>
+
+				<h3>A functional class name would look something like positive-button, important-text, or selected-tab. The styling of these elements is based on their function or meaning. Take a look at the following example:</h3>
+
+<!--this is where pasted block of code will go-->
+
+				<h3>Functional class names are great. When possible, this is probably how you want to write styles. But here is the catch: functional class names are not always possible.</h3>
+
+				<h3>Design is not always logical. It is easy to give an example for a functional class name when we are talking about buttons. Sometimes that block needs an inset shadow because it looks nice. Sometimes that icon needs to grow on hover because it is cute. Sometimes that text needs to be orange just because, well, it is orange.</h3>
+
+				<h3>If we cannot think of a good functional class name, we can either name that element based on its content, or based on its presentation.</h3>
+
+				<h3>Other Attributes</h3>
+
+				<h3>style</h3>
+
+				<h3>You can do inline styles although we do not do this in practice please note that it is an html attribute. Most use cases would be for creating email newsletters.</h3>
+
+<!--this is where pasted block of code will go-->
+
+				<h3>alt</h3>
+
+				<h3>Alt is used with images to clarify what the image is thats being presented. In some cases when the image does not load or loads slower the text will be displayed. This will allow search engines to index it as content as well as assist screenreaders used by people who have seeing disabilities.</h3>
+
+<!--this is where pasted block of code will go-->
+
+				<h3>title and href</h3>
+
+				<h3>Generally we use title and href together on anchors. The href attribute points to the intended target, this can be an id or an external source.</h3>
+
+<!--this is where pasted block of code will go-->
+
+				<h3>Titles are also found in other elements, like the <abbr>. For example:</h3>
+
+<!--this is where pasted block of code will go-->
+
+				<h3>Exercise</h3>
+
+				<h3>Open your semantic_exercise.html file so we can add some IDs and classes to it.</h3>
+
+				<h3>Add the a tag to each blog post that has the text Read More. Give each of these anchors a content based class name.</h3>
+
+				<h3>Find an img tag and add a semantic alt attribute to it.</h3>
+
+				<h3>Find your main header tag and give it a presentational class name.</h3>
+			</p>
+
+
+
+
+
+
+
+
+		<h1 id="section1.4">1.4 Forms</h1>
+			<p>
+				<h3>Intro to HTML Forms</h3>
+
+				<h3>You have used forms in web pages many times. Maybe you were logging in, signing up, or leaving a comment. Forms provide a way to take inputs from a user and then perform some action based upon them.</h3>
+
+				<h3>Form Structure</h3>
+
+				<h3>HTML forms can be defined by using the <form> element. Let's start out by looking at an example of a simple login form.</h3>
+
+<!--this is where pasted block of code will go-->
+
+				<h3>Do not worry about the contents of the form for now, we will go over the content later. For now, just look at the form element and the attributes that go with it. As you can see in the example above, a couple attributes were specified on the form element. Let's go through them individually.</h3>
+
+				<h3>Form Method</h3>
+
+				<h3>The method attribute of an HTML form refers to the HTTP (HyperText Transfer Protocol) method that should be used to transmit the form data. Some HTTP methods were covered in the prework, but let's review two basic HTTP methods. If no method is specified, by default, the GET method will be used.</h3>
+
+				<h3>"GET" Method</h3>
+
+				<h3>HTTP GET's are used to request information, without making any changes to data on the server. When a form's method is set to GET, any of the data that the form sends will be appended to the url.</h3>
+
+				<h3>"POST" Method</h3>
+
+				<h3>HTTP POST's are used to make a change to existing data on the server. When a form's method is set to POST, any of the data that the form sends will not be added to the url, but will instead be embedded in the body of the HTTP request as key-value pairs. If you have ever been asked a question like, "Are you sure you want to re-submit this form?", then you were probably refreshing a page after submitting an HTTP POST.</h3>
+
+				<h3>Additional HTTP Methods</h3>
+
+				<h3>There are other HTTP methods, such as PUT and DELETE, that will be covered later when we start developing web apps in Laravel.</h3>
+
+				<h3>Form Action</h3>
+
+				<h3>The action attribute of an HTML form refers to the location that the form data should be sent. This will generally be a PHP (or other back-end language) file on the web server that can read the inputs and perform some action based on them. If no action is specified, by default, the action will be set to send data back to the current url.</h3>
+
+				<h3>Testing Forms without a Back-End</h3>
+
+				<h3>We haven’t learned how to test forms using the backend yet, so, if we want to test forms, using our HTML knowledge, how would we go about it? Well, there’s a neat service we can use that will allow us to iterate through the content we submit called RequestBin.</h3>
+
+				<h3>Query String</h3>
+
+				<h3>A query string is composed of key-value pairs. It begins with a question mark (?). Following the question mark, is the first key-value pair. Key-value pairs are structured as key=value. Key-value pairs after the first will be separated by ampersands (ampersand).</h3>
+
+				<h3>Here is an example:</h3>
+
+<!--this is where pasted block of code will go-->
+
+				<h3>Whenever you use the GET method in an HTML form, the form inputs will be appended to the url in the format shown above. If you are using a POST method in an HTML form, the inputs will be sent as a query string (this time without the preceding question mark) in the body of the HTTP request.</h3>
+
+				<h3>Exercises</h3>
+
+				<h3>Your First Form.</h3>
+
+				<h3>Please perform the following steps to create your first form.</h3>
+
+				<h3>Within the ~/vagrant-lamp/sites/codeup.dev/public/ folder on your Mac, create a file named my_first_form.php.</h3>
+		
+				<h3>Open the file you just created in your favorite editor. Using what you have learned in the previous lessons, add the necessary HTML document structure to the page with a title of: "My First HTML Form".</h3>
+		
+				<h3>Copy and paste the form example in this lesson into the body of your HTML document.</h3>
+
+				<h3>View the result in your web browser by browsing to: http://codeup.dev/my_first_form.php</h3>
+				
+				<h3>Place the following at the top of your php file.</h3>
+
+<!--this is where pasted block of code will go-->
+
+				<h3>Experiment with using the GET and POST methods by submitting the form and viewing the results in your browser.</h3>
+
+				<h3>Try deleting the name attributes from the inputs and then submit the form. View the results in your browser. What do you observe? Repeat with the id attributes. What do you observe?</h3>
+			</p>
+
+			<p>
+				<h3>Inputs and Submitting</h3>
+					<h3>Form Inputs and Submitting</h3>
+
+					<h3>So far, we have covered the basic structure of HTML forms, and a little bit about how they work. Now we will begin to cover form inputs and submission.</h3>
+
+					<h3>Form Inputs</h3>
+
+					<h3>Form inputs can be defined by using the HTML <input> element. The <input> element is a void element, since it doesn't have any inner content.</h3>
+
+					<h3>Type Attribute</h3>
+
+					<h3>There are many types of form inputs in HTML. Since most HTML inputs use the same HTML element, input, the browser needs a way to distinguish the input type. This is achieved by specifying a type attribute as part of the input element. The types we will be covering in this unit are:</h3>
+
+					<h3>submit</h3>
+
+					<h3>text</h3>
+
+					<h3>hidden</h3>
+			
+					<h3>password</h3>
+
+					<h3>checkbox</h3>
+
+					<h3>radio</h3>
+
+					<h3>We will also be covering the textarea and select input types, which use unique HTML elements that will be discussed later in this unit.</h3>
+
+					<h3>Name Attribute</h3>
+
+					<h3>HTML inputs should also have a name attribute that describes what the input is. The name attribute for the input will appear as the key in the query string when the form is submitted.</h3>
+
+					<h3>Id Attribute</h3>
+
+					<h3>Additionally, an id attribute with the same value as the name attribute is often specified with the input. The id attribute is used for input labeling and also for easy access via JavaScript.</h3>
+
+					<h3>Value Attribute</h3>
+
+					<h3>Some input types, like submit, text, and email, can have an initial value set by using the value attribute.</h3>
+
+					<h3>Placeholder Attribute</h3>
+
+					<h3>Some input types, like text, password, email, and textarea, can have a text overlay that give information about the input that disappears once data is entered for the input. This text overlay is accomplished using the placeholder attribute. The placeholder attribute will not be shown if a value is set for the input.</h3>
+
+					<h3>Note: The placeholder attribute is supported in Internet Explorer 10+, Firefox, Opera, Chrome, and Safari.</h3>
+
+					<h3>Input Example</h3>
+
+					<h3>Using all the attributes we just learned, here is a simple text input:</h3>
+
+<!--this is where pasted block of code will go-->
+
+					<h3>Input Labeling</h3>
+
+					<h3>To label form inputs, the <label> element is used. You may have noticed the labels in the example in the previous lesson. Form labels should be defined along with a for attribute that points to the id of the <input> that the label is for. Here is an example of the proper use of a form label:</h3>
+
+<!--this is where pasted block of code will go-->
+
+					<h3>Submitting Forms</h3>
+
+					<h3>Forms are generally submitted by having a user click on a submit button. To add a submit button to a form, use an <input> that has a type attribute with a value of submit as follows:</h3>
+
+<!--this is where pasted block of code will go-->
+
+					<h3>This will create a button that says: "Submit". If you would like to specify alternate text for the button, you can do that via the value attribute as follows:</h3>
+
+<!--this is where pasted block of code will go-->
+
+					<h3>The above example will create a button that says: "Login". It should be noted that if you add a name attribute to an input type="submit", the value specified will appear along with other form data when the form is submitted.</h3>
+
+					<h3>An HTML button element can also be used to submit a form. Although we haven't discussed the button element yet, here is an example of using it to submit a form.</h3>
+
+<!--this is where pasted block of code will go-->
+
+					<h3>This example will display the same result as the previous one. The main reason to use a button over an input type="submit is that the button element is not a void element and can contain other elements. It also offers more styling possibilities.</h3>
+
+					<h3>Exercises</h3>
+
+					<h3>For this lesson, you will continue modifying the my_first_form.php file that you created earlier. Please perform the following steps:</h3>
+
+					<h3>Open the my_first_form.php file in your favorite editor.</h3>
+
+					<h3>Add placeholder attributes with appropriate values to both the username and password inputs.</h3>
+
+					<h3>Try adding a name attribute to the input type="submit. Submit the form as a POST request and view the results in your browser.</h3>
+
+					<h3>Add a value attribute to the input type="submit> to change the button to say "Login". Try submitting the form and view the results in your browser.</h3>
+
+					<h3>Replace the input type="submit> with a button> element and try submitting the form.</h3>
+			</p>
+
+			<p>
+				<h3>Text and Textarea</h3>
+					<h3>Text, Password, Hidden and Textarea</h3>
+
+					<h3>Now that you know about some of the different types of form inputs that are available, and how forms are submitted, we can start to talk about individual input types.</h3>
+
+					<h3>Text Inputs</h3>
+
+					<h3>>An input element with a type attribute value of text is one of the most basic inputs. We have seen it in use in the examples in the previous lessons.</h3>
+
+					<h3>Here is another example:</h3>
+
+					<h3>input type="text" id="first_name" name="first_name" value="" placeholder="First Name"></h3>
+
+					<h3>Password Inputs</h3>
+
+					<h3>An input element with a type attribute value of password is very similar to a text input. The primary difference is that password inputs are masked so that text that is typed in the box cannot be seen.</h3>
+
+					<h3>Here is an example:</h3>
+
+<!--this is where pasted block of code will go-->
+
+					<h3>Hidden Inputs</h3>
+
+					<h3>An input> element with type attribute value of hidden is also like the text input. The main difference would be is that hidden is not viewable in the browser. The hidden field would have a value the developer would set so that value can still get sent along with the form.</h3>
+
+					<h3>Example below:</h3>
+
+<!--this is where pasted block of code will go-->
+
+					<h3>Text Area Inputs</h3>
+
+					<h3>Sometimes we need an input that allows a user to type more than just a word or phrase. For example, what if we wanted to allow a user to compose an email? For larger text inputs, we can use the textarea element.</h3>
+
+					<h3>Here is an example:</h3>
+
+<!--this is where pasted block of code will go-->
+
+					<h3>Notice that the <textarea> element is not a void element. The contents between the tags will be rendered as the initial value of the text area.</h3>
+
+					<h3>One way to control size of the <textarea> element is the use the rows and cols attributes as follows:</h3>
+
+<!--this is where pasted block of code will go-->
+
+					<h3>Later on, we will learn additional ways to size inputs, like the textarea element, using styles.</h3>
+
+					<h3>Exercises</h3>
+
+					<h3>For this lesson, you will continue modifying the my_first_form.php file that you created earlier. Please perform the following steps:</h3>
+
+					<h3>Open the my_first_form.php file in your favorite editor.</h3>
+	
+					<h3>Add a new form below the existing form.</h3>
+					
+					<h3>Add inputs to the form that would allow a user to compose an email (to, from, subject, body, and a send button). Make sure to use the appropriate input types for each form element.</h3>
+	
+					<h3>Put headings above the forms. Label the first form as "User Login", and the second form as "Compose an Email".</h3>
+
+					<h3>When complete, try submitting the new form and view the results in your browser.</h3>
+
+
+
+			</p>
+
+			<p>
+				<h3>Checkbox Radio</h3>
+					<h3></h3>
+
+
+
+			</p>
+
+			<p>
+				<h3>Select</h3>
+					<h3></h3>
+
+
+			</p>
+
+
+
+
+
+	<hr>
+	<h1 id="section2">2. Git</h1>
+		<p>
+			<h3>Wikipedia describes Git as:<h3>
+
+			<h3>Git (/ɡit/) is a distributed revision control and source code management (SCM) system with an emphasis on speed, data integrity, and support for distributed, non-linear workflows. Git was initially designed and developed by Linus Torvalds for Linux kernel development in 2005, and has since become the most widely adopted version control system for software development.</h3>
+
+			<h3>We will use Git to store our code and all the revisions we make.</h3>
+		</p>
+
+		<h1 id="section2.1">2.1 Page Structure</h1>
+		<h1 id="section2.2">2.2 Elements</h1>
+		<h1 id="section2.3">2.3 Attributes</h1>
+		<h1 id="section2.4">2.4 Forms</h1>
+		<h1 id="section2.5">2.5 Attributes</h1>
+		<h1 id="section2.6">2.6 Forms</h1>
+	<hr>
+
+	<h1 id="section3">3. CSS</h1>
+		<p>
+			<h3>CSS Intro</h3>
+
+			<h3>CSS stands for Cascading Style Sheets. CSS allows us to customize the presentation of a web page by specifying the colors, fonts, layout, and more. CSS also provides for the separation of the document content from the presentation. This separation has many benefits, including:</h3>
+
+			<h3>Content can be used independently of styling for other purposes.</h3>
+
+			<h3>Styles can be re-used across pages.</h3>
+
+			<h3>Updating styles in a stylesheet that is used in many pages is much more efficient than updating all the pages individually.</h3>
+
+			<h3>Bandwidth savings can be significant due to stylesheet caching. Styles can be added to a web page in several ways, and we will be discussing those next.</h3>
+
+			<h3>Element Style Attribute</h3>
+
+			<h3>One of the simplest ways to add style to an HTML element is by using the style attribute. This is also the least recommended method, because all the benefits described above do not apply to styles applied in this way. Nonetheless, it is still useful to understand that styles can be applied in this way. Let's look at an example:</h3>
+
+
+<!--this is where pasted block of code will go-->
+
+			<h3>In the example above, the h1 element text will be blue and underlined. For now, do not worry about the style details, just look at the syntax. As you can see, a style attribute was added to the h1 element. The value of the style element consists of multiple key:value pairs with a colon between the key and the value. Key:value pairs are then separated by semicolons. As you will see, this syntax is used regardless of how the style is included in the page.</h3>
+
+			<h3>Inline/Embedded Stylesheet</h3>
+
+			<h3>Another method of adding styles to a webpage is via an embedded stylesheet. This can be accomplished by using a style element in the head of your HTML page. Let's see an example:</h3>
+
+
+<!--this is where pasted block of code will go-->
+
+
+			<h3>In the above example, you can see that a style tag with some style definitions was included in the head of the HTML page. You can also see that a class attribute was added to the h1 element that linked to one of the defined styles. We will discuss more about how this happens in the next lesson. For now, all you have to know is that you can add styles directly to the head of an HTML page in this manner. Using this styles in this way provides some of the benefits described in the intro, but not all of them.</h3>
+
+			<h3>External Stylesheet</h3>
+
+			<h3>Finally, another way to add styles to a web page is to link to an external stylesheet. This is the recommended method, and the one that will provide all of the benefits listed in the intro. Let's check out how this is done:</h3>
+
+<!--this is where pasted block of code will go-->
+
+			
+			<h3>As you can see in the example above, an external stylesheet is added via the link element. The link element is a void element and therefore has no content or closing tag. A rel attribute should be specified with a value of stylesheet. An href attribute with a value pointing to the stylesheet to include also needs to be specified.</h3>
+
+			<h3>Using this method, the fancy-header style can be used multiple times in multiple pages. If you want to change what a fancy-header looks like, you only need to change it in one place and the update will take place anywhere it is used.</h3>
+
+			<h3>Comments</h3>
+
+			<h3>Comments in CSS are accomplished using the following syntax:</h3>
+
+
+<!--this is where pasted block of code will go-->
+
+
+			<h3>As you can see, the same syntax is used for both single and multi-line comments.</h3>
+
+			<h3>Exercises</h3>
+
+			<h3>For this lesson, perform the following tasks:</h3>
+
+			<h3>Create an HTML file named css_intro.html within the ~/vagrant-lamp/sites/codeup.dev/public folder on your Mac. Create a folder named css in the same location as the html files you created.</h3>
+			
+			<h3>Inside the css folder, create a file named site.css. Use the sample code from the "External Stylesheet" section above to add content to the two files you created.</h3>
+
+			<h3>View the results in your browser to test for the expected output.</h3>
+			
+			<h3>Congrats! You now know how to include CSS in a web page.</h3>
+		</p>
+
+		<h1 id="section3.1">3.1 Page Structure</h1>
+		<h1 id="section3.2">3.2 Elements</h1>
+		<h1 id="section3.3">3.3 Attributes</h1>
+		<h1 id="section3.4">3.4 Forms</h1>
+		<h1 id="section3.5">3.5 Attributes</h1>
+		<h1 id="section3.6">3.6 Forms</h1>
+
+	<hr>
+	<h1 id="section4">4. JavaScript</h1>
+		<p>
+			<h3>JavaScript Intro</h3>
+
+			<h3>JavaScript, abbreviated JS, is a high-level, interpreted computer programming language that can be executed within a web browser. For additional information you can read the reference material on JavaScript.</h3>
+
+			<h3>History</h3>
+
+			<h3>JavaScript was originally developed in 1995 by Brendan Eich of Netscape. In 1996, Microsoft began supporting JavaScript in Internet Explorer. In 1997, JavaScript 1.1 was submitted to the Ecma for standardization. The JavaScript standard is called ECMAScript, and all modern browsers fully support ECMAScript 5.1.</h3>
+
+			<h3>Initially, JavaScript was looked down on by professional programmers. The advent of AJAX caused a resurgence in the popularity of JavaScript. This resurgence brought attention from professional programmers, along with new frameworks and best practices. Today, nearly every web page you access runs some JavaScript and the web certainly wouldn't be the same without it.</h3>
+
+			<h3>Data Types</h3>
+
+			<h3>There are 5 simple/primitive types in JavaScript:</h3>
+
+			<h3>Type	Example
+				boolean	true/false
+				number	10, 3.14
+				string	"Hello Codeup"
+				undefined	unassigned variables have this value and type
+				null	special keyword denoting a null value</h3>
+
+			<h3>There is one complex type:</h3>
+
+			<h3>object</h3>
+			
+			<h3>Some special object types worth mentioning are:</h3>
+
+			<h3>function</h3>
+			
+			<h3>array</h3>
+
+			<h3>To determine the type of a particular value, the typeof operator is used. A String representing the type name will be returned. Note: An operator is a symbol or keyword used within a programming language to perform a prescribed task/operation.</h3>
+
+			<h3>Variables</h3>
+
+			<h3>JavaScript is a dynamically typed language, so type information is associated with a value and not the variable itself. This means that a variable will take on the type of the value assigned to it.</h3>
+
+			<h3>For example, to define a variable called name with a value of "Codeup", we would write the following:</h3>
+
+			<h3>var name = "Codeup";</h3>
+
+			<h3>As you can see, variables are declared using the var keyword, and assignment is accomplished with the = (equals) operator. Additionally, statements should end with a ; (semicolon).</h3>
+
+			<h3>You can also declare multiple variables in a single statement by using the comma operator.</h3>
+
+			<h3>var name = "Codeup", codename = "Arches";</h3>
+
+			<h3>Variable names should start with a letter, $, or _, followed by additional letters, dollar signs, underscores, or numbers. Variable names cannot be any of the reserved words. Although unicode characters can also be used, it is much safer to stick to the guidelines above.</h3>
+
+			<h3>If a variable is declared, but no value is assigned, then the variable will be of type undefined with value undefined.</h3>
+
+			<h3>var novalue; // undefined</h3>
+
+			<h3>typeof novalue; // returns "undefined"</h3>
+
+			<h3>novalue == undefined; // returns true</h3>
+
+			<h3>Constants</h3>
+
+			<h3>Read-only values can be created using the const keyword as follows:</h3>
+
+			<h3>const pi = 3.145;</h3>
+		
+			<h3>Code Comments</h3>
+
+			<h3>Code comments allow you to add documentation to your code that does not take part in the code execution. Comments are essential to make your code readable. In JavaScript, code comments can be added using // comments-here for single-line comments and /* comments-here */ for multi-line comments.</h3>
+
+			<h3>// this is a single line comment</h3>
+
+			<h3>Chrome JavaScript Console</h3>
+
+			<h3>The Google Chrome web browser has some built-in web developer tools, including a JavaScript console. JavaScript statements can be executed at the console and active web pages can be debugged there. The JavaScript Console is a great place to learn and play with JavaScript, just as the Interactive Shell is for PHP.</h3>
+
+			<h3>To access the JavaScript Console in Google Chrome, do one of the following:</h3>
+		</p>
+
+		<h1 id="section4.1">4.1 Page Structure</h1>
+		<h1 id="section4.2">4.2 Page Structure</h1>
+		<h1 id="section4.3">4.3 Page Structure</h1>
+		<h1 id="section4.4">4.4 Page Structure</h1>
+		<h1 id="section4.5">4.5 Page Structure</h1>
+		<h1 id="section4.6">4.6 Page Structure</h1>
+		<h1 id="section4.7">4.7 Page Structure</h1>
+		<h1 id="section4.8">4.8 Page Structure</h1>
+	
+	<hr>
+	<h1 id="section5">5. jQuery</h1>
+		<p>
+			<h3>Introduction to jQuery</h3>
+
+			<h3>What is jQuery?</h3>
+
+			<h3>jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML. It was released in January 2006 at BarCamp NYC by John Resig. jQuery - Wikipedia, the free encyclopedia</h3>
+
+			<h3>jQuery is the most widely used JavaScript library on the internet today.</h3>
+
+			<h3>Why use jQuery?</h3>
+
+			<h3>Used by over 80% of the 10,000 most visited websites, jQuery is the most popular JavaScript library in use today. jQuery - Wikipedia, the free encyclopedia</h3>
+
+			<h3>jQuery has a simple syntax makes it easy to:</h3>
+
+			<h3>navigate a document</h3>
+			<h3>select DOM elements</h3>
+			<h3>create animations</h3>
+			<h3>handle events</h3>
+			<h3>create Ajax applications</h3>
+			<h3>add plugins</h3>
+			<h3>Using jQuery</h3>
+
+			<h3>Before we can begin using jQuery in our applications, we need to include the jQuery source. This can be done by either installing locally or linking to a public CDN.</h3>
+
+			<h3>Installing jQuery</h3>
+
+			<h3>We can install jQuery locally, or using a content delivery network (CDN).</h3>
+
+			<h3>Downloading jQuery</h3>
+
+			<h3>We can download different packages for jQuery from the official jQuery download page.</h3>
+
+			<h3>There are 2 versions of jQuery available at this time:</h3>
+
+			<h3>jQuery 1.x - The current recommended version</h3>
+
+			<h3>jQuery 2.x - Newest version, has same API as 1.x, but no support for IE 6, 7, or 8</h3>
+
+			<h3>Each version has two different release types: compressed (production) and uncompressed (development).</h3>
+
+			<h3>We will be using the uncompressed copies for our applications and will switch them out for the compressed versions when we launch our product on a production server.</h3>
+
+			<h3>On the official jQuery download page, we can right-click the link to download the uncompressed jQuery 1.x, and choose save link as, browse to our desired location, and save the .js file.</h3>
+
+			<h3>To use in our application, we can now just copy the file to our js folder and reference it using a</h3>
+
+			<!--this is where pasted block of code will go-->
+
+			<h3>Using jQuery from a CDN</h3>
+
+			<h3>jQuery provides a CDN release for production. It is available in the minified version and is easy to include using a element.</h3>
+
+			<!--this is where pasted block of code will go-->
+
+			<h3>This line will retrieve the jQuery source code from the CDN provided by MaxCDN.</h3>
+
+			<h3>The jQuery object</h3>
+
+			<h3>We will be using the jQuery object to find and create HTML elements from the DOM.</h3>
+
+			<h3>The jQuery object is defined in the API documentation:</h3>
+
+			<h3>Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.</h3>
+
+			<h3>In jQuery, we commonly use the dollar sign $, an alias of jQuery to reference the jQuery object, as we will see below.</h3>
+
+			<h3>Document Ready</h3>
+
+			<h3>JavaScript provides the ability to natively determine if the window has finished loading using the window.onload event handler.</h3>
+
+			<!--this is where pasted block of code will go-->
+
+			<h3>While this is a good way to make sure the page is fully loaded and ready for DOM manipulation, it waits until all images have finished downloading. We usually do not need the image files to be fully downloaded to begin manipulating DOM objects.</h3>
+
+			<h3>We can use jQuery to select the document object and add an event listener called ready. This event listener will fire as soon as the DOM is ready to be manipulated, before all the images have completed downloading.</h3>
+
+			<h3>To use the document ready event listener, we can select the document and chain the ready() method:</h3>
+
+			<h3>Passing an anonymous function in ready() will execute our code when the document is ready for JavaScript manipulation:</h3>
+
+			<!--this is where pasted block of code will go-->
+
+
+			<h3>While using document ready is very common, if we put our JavaScript at the bottom of our document, it will already be loaded by the time the JavaScript is loaded. Using document ready will ensure the DOM is loaded before running.</h3>
+
+			<h3>Exercises</h3>
+
+			<h3>Commit each step to GitHub.</h3>
+
+			<h3>Create a new file named jquery_exercises.html in your codeup.dev directory.</h3>
+
+			<h3>Add a basic HTML structure and included the downloaded version of jQuery in your js folder.</h3>
+
+			<h3>Add an alert to tell you the DOM has finished loading. Check for expected results.</h3>
+		</p>
+
+		<h1 id="section5.1">5.1 Page Structure</h1>
+		<h1 id="section5.2">5.2 Page Structure</h1>
+		<h1 id="section5.3">5.3 Page Structure</h1>
+		<h1 id="section5.4">5.4 Page Structure</h1>
+		<h1 id="section5.5">5.5 Page Structure</h1>
+		<h1 id="section5.6">5,6 Page Structure</h1>
+		<h1 id="section5.7">5.7 Page Structure</h1>
+		<h1 id="section5.8">5.8 Page Structure</h1>
+
+	<hr>
+	<h1 id="section6">6. Frontend PHP</h1>
+		<p>
+			<h3>PHP I</h3>
+
+			<h3>PHP is defined by Wikipedia as:</h3>
+
+			<h3>PHP is a server-side scripting language designed for web development but also used as a general-purpose programming language. As of January 2013, PHP was installed on more than 240 million websites (39% of those sampled) and 2.1 million web servers. Originally created by Rasmus Lerdorf in 1994, the reference implementation of PHP (powered by the Zend Engine) is now produced by The PHP Group. While PHP originally stood for Personal Home Page, it now stands for PHP: Hypertext Preprocessor, which is a recursive acronym.</h3>
+
+			<h3>In this section we will learn the basics of PHP.</h3>
+		</p>
+
+		<h1 id="section6.1">6.1 Page Structure</h1>
+		<h1 id="section6.2">6.2 Page Structure</h1>
+		<h1 id="section6.3">6.3 Page Structure</h1>
+		<h1 id="section6.4">6.4 Page Structure</h1>
+		<h1 id="section6.5">6.5 Page Structure</h1>
+		<h1 id="section6.6">6.6 Page Structure</h1>
+		<h1 id="section6.7">6.7 Page Structure</h1>
+		<h1 id="section6.8">6.8 Page Structure</h1>
+		<h1 id="section6.9">6.9 Page Structure</h1>
+		<h1 id="section6.10">6.10 Page Structure</h1>
+
+	<hr>
+	<h1 id="section7">7. WordPress</h1>
+		<p>
+			<h3>Intro Wordpress</h3>
+
+			<h3>WordPress is a free and open-source blogging tool and a content management system (CMS) based on PHP and MySQL. Features include a plugin architecture and a template system. WordPress was used by more than 23.3% of the top 10 million websites as of January 2015. WordPress is the most popular blogging system in use on the Web, at more than 60 million websites.</h3>
+
+			<h3>Wordpress link will go here</h3>
+		</p>
+
+		<h1 id="section7.1">7.1 Page Structure</h1>
+		<h1 id="section7.2">7.2 Page Structure</h1>
+		<h1 id="section7.3">7.3 Page Structure</h1>
+		<h1 id="section7.4">7.4 Page Structure</h1>
+
+	<hr>
+	<h1 id="section8">8. Angular</h1>
+		<p>
+			<h3>Intro to Angular</h3>
+
+			<h3>Angular is a third party JavaScript library, just like jQuery. While jQuery's focus is on traversing and altering DOM elements, Angular's strength lies in presenting data to the user and defining how they can manipulate it. Generally, both libraries play well with one another and provide a certain amount of overlap (for example, events and AJAX requests).</h3>
+
+			<h3>Getting the Angular Script</h3>
+
+			<h3>Much like jQuery, we can either download Angular locally to our server, or access it from a CDN. Either solution can be found by clicking the nice, blue "Download" button on the Angular homepage.</h3>
+
+			<h3>Modules</h3>
+
+			<h3>All of our Angular code will be organized into modules. Modules are simply a way to encapsulate our features and functionality into a single object. We can define a new module in the following manner:</h3>
+
+			<!--this is where pasted block of code will go-->
+
+			<h3>The angular.module() function takes in two parameters. The first is the name for your module. This name can be anything you want, but convention is to stick with camelCase names. The second argument is an array of dependencies. We will cover more of what dependencies are and how to use them in a later section. For now, just pass an empty array.</h3>
+
+			<h3>Self-Invoking Functions</h3>
+
+			<h3>One of the key objectives for Angular modules is to allow them to interoperate with other modules. Because of this we want to prevent them from accidentally interfering with other Angular modules (even if we have not yet made more than one). We already know the best way to do this. The way we keep our modules isolated is to encapsulate them in an immediately invoked function expression. A more complete example of our previous module declaration would be the following:</h3>
+
+			<!--this is where pasted block of code will go-->			
+
+			<h3>Bootstrapping a Module</h3>
+
+			<h3>Once a module has been created we need a way to initiate it when our page loads. This process of initializing some modular code when the user navigates to a page is called bootstrapping. We instruct Angular which module we want to bootstrap with a directive. Directives look and act almost identically to HTML attributes, but they are generally ignored by the browser and instead are interpreted by Angular. The directive we use to bootstrap a particular module is ng-app. This directive must be placed on the html element of our page. A page that bootstraps our moduleName module would look like the following:</h3>
+
+			<!--this is where pasted block of code will go-->			
+
+			<h3>Exercises</h3>
+
+			<h3>We have only just begun to scratch the surface with Angular, and until the next section we do not have much to experiment with...yet. Your exercise is to remember what we have covered on this page, and to refer back to it as we go through the later lessons. The key steps to remember are:</h3>
+
+			<h3>Declare your module in an IIFE.</h3>
+
+			<h3>Keep each module in its own file, ideally named the same as the module itself.</h3>
+
+			<h3>Module declaration requires a camelCaps module name and an empty array.</h3>
+
+			<h3>Include both the angular.min.js file and the file for your module in your HTML, in that order.</h3>
+
+			<h3>Bootstrap your module by using ng-app="..." in the html tag.</h3>
+		</p>
+
+		<h1 id="section8.1">8.1 Page Structure</h1>
+		<h1 id="section8.2">8.2 Page Structure</h1>
+		<h1 id="section8.3">8.3 Page Structure</h1>
+		<h1 id="section8.4">8.4 Page Structure</h1>
+
+	<hr>
+	<h1 id="section9">9. Appendix A: Code Standards</h1>
+		<p>
+			<h3>Code Standards</h3>
+
+			<h3>By now you have seen that PHP has certain rules that must always be followed—rules about using semicolons, or matching up braces, or putting parenthesis around our function parameters. These rules make up PHP's grammar and syntax, and just like grammar in English, if we do not follow these rules PHP will have trouble understanding what we're trying to say. There are parts of our code that PHP does not care about. How far do we indent blocks of code? Do we use tab characters or spaces? Where do we put the curly braces after our function declaration? These are the decisions that make up our coding standards.</h3>
+
+			<h3>Most companies have a set of guidelines about how their code should be styled and organized. These guidelines are intended to help make their code more consistent across all their applications. This consistency is important. By making sure our code follows a uniform set of rules, opening a script that someone else created is less scary. When you and your coworkers agree on how your code should look and be styled, working on a team becomes much easier. Not every organization has a published set of coding standards. Those that don't however, quickly come to regret that.</h3>
+
+			<h3>The PHP-FIG and PSR</h3>
+
+			<h3>There are dozens of different published frameworks written for PHP, and even more internal frameworks that companies created for their own purposes. In this course we covered one of the most popular new frameworks: Laravel. At some point, several years ago, these frameworks began to interact with each other. One framework would call upon code built in another framework, which in turn would depend some code in a third. Eventually, a group of PHP developers realized they needed to make guidelines so that all their code could interact safely. These developers founded the PHP Framework Interop Group and published a series of guides to help prevent developers from stepping on each other's toes. These guides are called PHP Standards Recommendation or PSR and outline various best practices that developers of these frameworks should follow. In particular, PSR-1 and PSR-2 provide an excellent set of code standards. Because these standards are broadly supported throughout the PHP community, and because Laravel uses those same standards, we will be following the rules outlined in them.</h3>
+
+			<h3>Naming Conventions</h3>
+
+			<h3>First and foremost remember, programmers tend to be lazy. The less we have to type the better. More than that, the less keys we have to press at the same time, the better. For this reason most naming conventions start with all variables, functions, and other identifiers being written mostly in lowercase. The complication arrises when developers must name something with two or more words. How do we distinguish between these words without being able to put spaces between them? Overall there are three conventions for how to create multiword variables.</h3>
+
+			<h3>snake_case separates each word with an underscore ("_"), so "my first name" becomes my_first_name.</h3>
+
+			<h3>Examples: array_pop, preg_replace, html_entity_decode, call_user_func_array</h3>
+
+			<h3>camelCase starts each new word with a capital letter, "my first name" becomes myFirstName.</h3>
+
+			<h3>Examples: bindValue, setFetchMode, getElementsByTagName</h3>
+
+			<h3>StudlyCaps are like CamelCase, but the first letter is also capitalized, in this case "my first name" would be MyFirstName.</h3>
+
+			<h3>Examples: PDOStatement, HTMLFormElement, ReflectionClass</h3>
+
+			<h3>Functions and Variables</h3>
+
+			<h3>All functions and variables should be named using camelCase. The opening curly brace for a function goes on the next line after the function heading. Let's say we want a function that converts a phone number to a given format, we might write it as follows:</h3>
+
+			<!--this is where pasted block of code will go-->			
+
+			<h3>Pay attention to the name we used for our function—formatPhone—and our variables, $phoneNumber and $formattedPhoneNumber. Also notice the placement of our curly braces. The opening curly brace is on the next line, after our function heading, and is lined up with the 'f' in function. The closing curly brace is on its own line as well, after the function body, and lines up with its opening partner.</h3>
+
+			<h3>Classes and File Names</h3>
+
+			<h3>In most cases, we want classes to appear more prominent than functions or variables. For that reason, we use StudlyCaps to name our classes. Think of them like proper names; class names are like the names of cities, companies, or people. Variables and functions are more like individual items with generic names. For example, maybe I have a $chair; where did I get it? OfficeMax. Or perhaps a $console; what kind is it? PlayStation. In this case, OfficeMax and PlayStation would be classes.</h3>
+
+			<h3>In order to keep our code clean and nicely organized, we will keep all our classes in their own file; one class per file. This helps keep all our classes isolated so that they can be easily managed. This means we need a standard way of naming our files along with our classes. We will name our files using snake_case. For example, if we had a class called PostsController, we would save it in a file called posts_controller.php. An example of this file might look like the following:</h3>
+
+			<!--this is where pasted block of code will go-->			
+
+			<h3>Again, notice where we put the curly braces: on the line after the class heading, just like functions and methods. Also pay attention to the method declarations. All class methods and properties must have their visibility declared (public, protected, or private) even if that visibility is technically optional (ie: public).</h3>
+
+			<h3>Sublime Settings</h3>
+
+			<h3>Sublime can be configured to aide in keeping our files properly formatted. In the bottom right of the Sublime window, next to where the current syntax highlighting is displayed, there is a pop-up menu that will allow you to configure the indentation settings for that file.</h3>
+
+			<h3>Sublime Indentation Settings</h3>
+
+			<h3>When you click this item you should see the following menu; make sure both "Indent Using Spaces" and "Tab Width: 4" are checked.</h3>
+
+			<h3>Sublime Indentation Popup</h3>
+
+			<h3>If you find a file you are responsible for does not have the correct indentation, you can fix part of that here by making sure the appropriate options are marked and then selecting "Convert Indentation to Spaces".</h3>
+
+			<h3>Replace tabs with Sublime</h3>
+
+			<h3>If you are uncertain if your settings for a particular file are correct, make sure you see "Spaces: 4" in the bottom left corner, just like in the first picture.</h3>
+		</p>
+
+		<h1 id="section9.1">1.1 Page Structure</h1>
+		<h1 id="section9.2">9.2 Page Structure</h1>
+		<h1 id="section9.3">9.3 Page Structure</h1>
+
+	<hr>
+	<h1 id="section10">10. Appendix B: Postwork</h1>
+		<p>
+			<h3>What's Next?</h3>
+
+			<h3>Now that you have graduated from Codeup, it is time to put your skills to work! This section includes example projects we at Codeup have come up with, as well as some real challenges other students have been given in interviews.</h3>
+
+			<h3>Most of these projects are intended to be done individually, although some have a scope large enough for teams of two or three to accomplish. Some projects will have recommended resources for you to use, most will require you to use your "google-fu" to find information to help.</h3>
+
+			<h3>This is not step-by-step curriculum, like our previous material. Client and employers are not going to give you an outline of how to accomplish your tasks, just a goal state to work towards. This section will generally do the same.</h3>
+
+			<h3>Good luck! And remember, the most important thing to do after leaving Codeup:</h3>
+
+			<h3>Just keep coding!</h3>
+		</p>
+
+		<h1 id="section10.1">10.1 Page Structure</h1>
+		<h1 id="section10.2">10.2 Page Structure</h1>
+		<h1 id="section10.3">10.3 Page Structure</h1>
+		<h1 id="section10.4">10.4 Page Structure</h1>
+		<h1 id="section10.5">10.5 Page Structure</h1>
+		<h1 id="section10.6">10.6 Page Structure</h1>
+		<h1 id="section10.7">10.7 Page Structure</h1>
+		<h1 id="section10.8">10.8 Page Structure</h1>
+		<h1 id="section10.9">10.9 Page Structure</h1>
+		<h1 id="section10.10">10.10 Page Structure</h1>
+		<h1 id="section10.11">10.12 Page Structure</h1>
+
+
+</body>
+</html>

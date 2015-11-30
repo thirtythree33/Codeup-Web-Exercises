@@ -1,0 +1,124 @@
+div#toprow {
+	background-color: white;
+	width: 325px;
+	border: 1px solid black;
+	height: 125px;
+	margin: 10px;
+	float: top;
+}
+
+div#bottomrow {
+	background-color: white;
+	width: 325px;
+	border: 1px solid black;
+	height: 120px;
+	margin: 10px;
+}
+
+div#redcontainer {
+	background-color: white;
+	width: 295px;
+	height: 125px;
+	float: left;
+}
+
+div#orangecontainer {
+	background-color: white;
+	width: 295px;
+	height: 125px;
+	float: right;
+}
+
+div#yellowcontainer {
+	background-color: white;
+	width: 295px;
+	height: 125px;
+	float: right;
+}
+
+div#greencontainer {
+	background-color: white;
+	width: 295px;
+	height: 125px;
+	float: right;
+}
+
+div#bluecontainer {
+	background-color: white;
+	width: 295px;
+	height: 125px;
+	float: right;
+}
+
+div#purplecontainer {
+	background-color: white;
+	width: 295px;
+	height: 125px;
+	float: right;
+}
+
+div#red {
+	background-color: red;
+	width: 75px;
+	border: 1px solid black;
+	height: 75px;
+	color: white;
+	text-align: center;
+	margin: 15px;
+	float: left;
+	}
+
+div#orange {
+	background-color: orange;
+	width: 75px;
+	border: 1px solid black;
+	height: 75px;
+	color: white;
+	text-align: center;
+	margin: 15px;
+	float: left;
+}
+
+div#yellow {
+	background-color: yellow;
+	width: 75px;
+	border: 1px solid black;
+	height: 75px;
+	color: white;
+	text-align: center;
+	margin: 15px;
+	float: right;
+}
+
+div#green {
+	background-color: green;
+	width: 75px;
+	border: 1px solid black;
+	height: 75px;
+	color: white;
+	text-align: center;
+	margin: 15px;
+	float: left;
+}
+
+div#blue {
+	background-color: blue;
+	width: 75px;
+	border: 1px solid black;
+	height: 75px;
+	color: white;
+	text-align: center;
+	margin: 15px;
+	float: left;
+}
+
+div#purple {
+	background-color: purple;
+	width: 75px;
+	border: 1px solid black;
+	height: 75px;
+	color: white;
+	text-align: center;
+	margin: 15px;
+	float: right;
+}
