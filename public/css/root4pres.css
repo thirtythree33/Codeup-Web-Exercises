@@ -1,0 +1,135 @@
+a {color: #000;
+}
+
+body {
+	background: #000;
+	color: #444;
+	font: normal 62.5% Tahoma,sans-serif;
+}
+
+h1 {
+	font: normal 1.8em Tahoma,sans-serif;
+	margin-bottom: 4px;
+}
+
+blockquote {
+	font-weight: bold;
+	padding-left: 28px;
+}
+
+.clearer {clear: both;}
+
+
+/*structure*/
+
+.container {
+	background: #FFF;
+	font-size: 1.2em;
+	margin: 0 auto;
+	padding: 0 10px 10px;
+	width: 800px;
+}
+
+
+/* header */
+
+.top {
+	padding: 50px 10px 0;
+}
+
+
+/* title */
+
+.header {
+	background: url(/img/stephen_root.jpg);
+	font-size: 1.2em;
+	height: 150px;
+	margin: 0 auto;
+	padding: 10px 10px 5px;
+	width: 780px;
+}
+
+.header .left, .header .right {
+	background: #A4A4A0;
+	color: #FFF;
+	height: 150px;	
+}
+
+.header .left {
+	background: #B3C2C7 url(img2/header.jpg) no-repeat;
+	font: normal 2.8em "Trebuchet MS",sans-serif;
+	line-height: 150px;
+	text-align: center;	
+	width: 564px;
+}
+
+.header .right {
+	overflow: auto;
+	background:#7f955f;
+	width: 212px;
+}
+
+
+/* navigation */
+
+.navigation {	
+	background: #D9E1E5 url(img2/nav.gif);
+	border: 1px solid #DFEEF7;
+	border-color: #DFEEF7 #CFDEE7;
+	height: 41px;
+	float: none;
+}
+
+.navigation a {
+	background: #D9E1E5 url(img2/nav.gif);
+	border-right: 1px solid #AFBEC7;
+	color: #456;
+	display: block;
+	float: right;
+	font: bold 1.1em sans-serif;
+	line-height: 41px;
+	padding: 0 20px;
+	text-decoration: none;
+}
+
+
+/* main */
+
+.main {
+	border-top: 4px solid #FFF;
+	background: url(img2/bgmain.gif) repeat-y;
+}
+
+
+/* sub navigation */
+
+.sidenav {
+	float: right;
+	width: 210px;
+	background:#dbe9d5
+}
+
+.sidenav h2 {
+	color: #5A5A43;
+	font-size: 1em;
+	line-height: 30px;
+	margin: 0;
+	padding-left: 12px;
+}
+
+/* content */
+
+.content {
+	float: left;
+	margin: 10px 0;
+	padding: 0 16px;
+	width: 531px;
+}
+
+.content .descr {
+	color: #664;
+	font-size: 0.9em;
+	margin-bottom: 6px;
+}
+
+.content p {font-family: "Lucida Sans Unicode",sans-serif;}
