@@ -1,11 +1,13 @@
-$(document).ready(function()  {
+window.onload = function()	{
+	alert( "welcome" );
+$(document).ready(function() {
 	var displayStuff, doMaths, value1, value2, operation;
 	
 	displayStuff = {
 		checkIfNull: function()	{
 			var getDisplay = $("#display").html();
 			if (getDisplay === "0")	{
-				$("#display").empty():
+				$("#display").empty();
 			}	else if (getDisplay === "00")	{
 				$("#display").empty();
 			};
@@ -140,8 +142,8 @@ $("#percent").click(function()	{
 	operation = "percent"
 	displayStuff.clear();
 });
+});
 
 $("#separator").click(function()	{
-	//
-});
-});
+	});
+};
